@@ -9,6 +9,8 @@ public class AirportDto {
 	@Size(min = 3, max = 20)
 	private String name;
 	
+	private String iata;
+
 	public AirportDto() {
 	}
 	
@@ -18,7 +20,6 @@ public class AirportDto {
 		this.name = name;
 		this.iata = iata;
 	}
-	private String iata;
 	
 	
 	public long getId() {
