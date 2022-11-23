@@ -40,7 +40,7 @@ public class AirportService {
 		 airports.remove(id);		 
 	 }
 	 
-		private void checkUniqueIata(String iata) {
+	private void checkUniqueIata(String iata) {
 		Optional<Airport> airportWithSameIata = airports.values().stream().filter(a -> a.getIata().equals(iata)).findAny();
 		if (airportWithSameIata.isPresent()) {
 			throw new NonUniqueIataException(iata);
