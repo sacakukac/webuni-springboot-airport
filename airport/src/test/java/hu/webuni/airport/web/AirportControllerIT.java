@@ -19,7 +19,7 @@ public class AirportControllerIT {
 	private static final String BASE_URI="/api/airports";
 
 	@Autowired
-	WebTestClient webTestClient;   //ez csak interface, nincs alapbol implementacio, 
+	WebTestClient webTestClient;   //ez csak interface, nincs alapbol implementacio, az implementáció a webflux 
 	
 	@Test
 	void testThatCreatedAirportIsListed() throws Exception {

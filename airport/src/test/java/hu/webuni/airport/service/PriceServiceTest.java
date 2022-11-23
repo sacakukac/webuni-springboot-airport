@@ -12,7 +12,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 @ExtendWith(MockitoExtension.class)
 public class PriceServiceTest {
 
-	@InjectMocks    // <= ebbe akarunk mock-ot injektálni, ezeket éldányosítja
+	@InjectMocks    // <= ebbe akarunk mock-ot injektálni, ezeket példányosítja
 	PriceService priceService;
 	
 	@Mock			// <= ez az injektált mock, ebből sok lehet
